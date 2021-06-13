@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: 'Share Tech Mono', monospace;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+/* paralax */
+section.paralax{
+    background-attachment: fixed;
+    height: 500px;
+}
+.p1{
+    background: url('https://www.ultimaficha.com.br/wp-content/uploads/2016/12/razerlogo.jpg') center;
+}
+/* menu */
+nav#menu ul li{
+    list-style: none;
+}
+nav#menu ul li a ,.contato a{
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 16px;
+    padding: 10px;
+    float: right;
+}
+nav#menu ul li a:hover{
+    color: #D8D8D8;
+}
+div#texto-menu{
+    text-align: center;
+    color: #fafafa;
+    margin-top: 100px;
+    position: absolute;
+    left: 40%;
+    transform: translate(-40%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+div#texto-menu h1{
+    font-size: 30px;
+}
+div#texto-menu p{
+    font-size: 15px;
+    font-weight: 100;
+}
+nav#menu h1{
+    color: #fafafa;
+    float: left;
+    padding: 10px;
+}
+h1#titulo{
+    padding: 5px;
+    margin-left: 100px;
+}
+@media(max-width: 800px){
+    div#texto-menu{
+        width: 100%;
+    }
+}
+/* formulario */
+div#box-form{
+    display: block;
+    width: 37%;
+    height: 250px;
+    margin: 0 auto;
+    /* border: 2px dashed black; */
+}
+form#form #nome ,#email ,#sobre-nome ,#tel{
+    width: 98.5%;
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 4px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #296A1E;
+    outline: none;
+}
+form#form #tel{
+    margin-top: 0;
+}
+form#form #nome{
+    width: 47%;
+    float: left;
+}
+form#form #sobre-nome{
+    width: 47%;
+    margin-left: 10px;
+}
+form#form #custon-buttom{
+    display: block;
+    margin-top: 5px;
+    border: none;
+    background-color: rgb(223, 10, 10);
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+form#form #custon-buttom:hover{
+    background-color: rgb(206, 25, 25);
+}
+@media(max-width: 800px){
+    div#box-form{
+        width: 99%;
+    }
+    form#form #nome{
+        width: 46%;
+        float: left;
+    }
+    form#form #sobre-nome{
+        width: 46%;
+        margin-left: 10px;
+    }
+}
+/* posts */
+div.box-items {
+    text-align: center;
+}
+div.box-items h1{
+    margin-bottom: 10px;
+}
+div.box-items .item-play{
+    border: 1px solid #000000;
+    display: inline-block;
+    box-shadow: 0px 0px 5px rgb(19, 20, 19);
+    border-radius: 5px;
+}
+div.box-items .item-play a{
+    text-decoration: none;
+    color: #1e5718;
+}
+div.box-items .item-play a:hover{
+    color: #309125;
+}
+div.box-items .item-play img{
+    width: 200px;
+    border-radius: 30px;
+}
+@media(max-width: 800px){
+    div.box-items .item-play{
+        margin-bottom: 10px;
+    }
+    div.box-items .item-play img{
+        width: 100px;
+        padding: 15px;
+    }
+}
+/* footer */
+footer#footer{
+    background-color: #0b1d09;
+    height: 70px;
+    margin-top: 40px;
+}
+footer#footer .contato a{
+    position: relative;
+    top: -30px;
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 16px;
+    float: right;
+}
+footer#footer h1{
+    text-align: center;
+    font-size: 25px;
+}
+footer#footer h1 a{
+    text-decoration: none;
+    color: #fafafa;
+}
